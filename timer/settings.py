@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'timer.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql'
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DBNAME'),
         'USER':config('DBUSER'),
         'PASSWORD':config('DBPASSWORD')
@@ -127,6 +127,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, static)
+    os.path.join(BASE_DIR, "static")
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
